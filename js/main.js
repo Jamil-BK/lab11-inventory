@@ -2,14 +2,21 @@
 
 import { ProductProperties } from './ProductProperties.js';
 
+// Helper function to log to both console and DOM
+function logOutput(message) {
+    console.log(message); // Dev console
+    const output = document.getElementById('output');
+    output.textContent += message + '\n';
+}
+
 // Sample products
 const product1 = new ProductProperties('Apple', 2.5, 50);
 const product2 = new ProductProperties('Notebook', 1.2, 100);
 
-// Log total value
-console.log(product1.getTotalValue());  // Should be 125.00
-console.log(product2.getTotalValue());  // Should be 120.00
+// Output for product1
+logOutput(product1.toString());
+logOutput(`Total Value: $${product1.getTotalValue().toFixed(2)}`);
 
-// Log string representation
-console.log(product1.toString());
-console.log(product2.toString());
+// Output for product2
+logOutput(product2.toString());
+logOutput(`Total Value: $${product2.getTotalValue().toFixed(2)}`);
