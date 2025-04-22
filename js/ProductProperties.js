@@ -13,4 +13,9 @@ export class ProductProperties {
     getTotalValue() {
         return this.price * this.quantity;
     }
+
+    // Method to return a string representation of the product
+    toString() {
+        return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
+    }
 }
