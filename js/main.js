@@ -32,3 +32,19 @@ logOutput(`Total Value: $${milk.getTotalValue().toFixed(2)}`);
 
 logOutput(yogurt.toString());
 logOutput(`Total Value: $${yogurt.getTotalValue().toFixed(2)}`);
+
+
+// Step 12: [Part 3 - Static Method] Apply 15% discount to all products
+
+// Group all products into one array
+const allProducts = [product1, product2, milk, yogurt];
+
+// Apply 15% discount using the static method
+ProductProperties.applyDiscount(allProducts, 0.15);
+
+// Log updated product info
+logOutput('\n--- After 15% Discount ---');
+allProducts.forEach(product => {
+    logOutput(product.toString());
+    logOutput(`Total Value: $${product.getTotalValue().toFixed(2)}\n`);
+});
