@@ -21,11 +21,25 @@ The application simulates a simple product inventory system using JavaScript cla
 
 ## Live Demo
 
-If deployed, you can add your GitHub Pages link here.
-
-Example:
-
-https://your-username.github.io/lab11-inventory
+https://jamil-bk.github.io/lab11-inventory/
 
 ## File Structure
+## File Structure
 
+lab11-inventory/
+├── index.html
+├── styles.css
+├── screenshot.png
+├── README.md
+├── .gitignore
+├── js/
+    ├── main.js
+    ├── ProductProperties.js
+    ├── PerishableProductProperties.js
+    └── store.js
+
+## Output Screenshot
+
+Here is a preview of the application running in the browser:
+
+![Lab 11 Output Screenshot](./screenshot.png)
