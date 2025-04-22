@@ -10,4 +10,13 @@ export class Store {
     addProduct(product) {
         this.inventory.push(product);
     }
+
+    // Step 15: [Part 4 - Store Class] Calculate total inventory value
+    getInventoryValue() {
+        let total = 0;
+        this.inventory.forEach(product => {
+            total += product.getTotalValue();
+        });
+        return total;
+    }
 }
