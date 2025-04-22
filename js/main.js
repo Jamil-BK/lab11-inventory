@@ -59,3 +59,14 @@ logOutput('\n--- Inventory Value After Discount (via Store) ---');
 logOutput(`Total Inventory Value: $${store.getInventoryValue().toFixed(2)}`);
 
 
+// Step 20: [Part 5 - Testing] Find a product by name and display it
+const searchName = 'milk';
+const foundProduct = store.findProductByName(searchName);
+
+logOutput(`\n--- Search Result for "${searchName}" ---`);
+if (foundProduct) {
+    logOutput(foundProduct.toString());
+    logOutput(`Total Value: $${foundProduct.getTotalValue().toFixed(2)}`);
+} else {
+    logOutput(`Product "${searchName}" not found.`);
+}
