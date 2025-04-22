@@ -19,4 +19,15 @@ export class Store {
         });
         return total;
     }
+
+        // Step 16: [Part 4 - Store Class] Find product by name
+        findProductByName(name) {
+            for (let product of this.inventory) {
+                if (product.name.toLowerCase() === name.toLowerCase()) {
+                    return product;
+                }
+            }
+            return null;
+        }
+    
 }
