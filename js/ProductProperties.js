@@ -8,4 +8,9 @@ export class ProductProperties {
         this.price = price;
         this.quantity = quantity;
     }
+
+    // Method to calculate total value of the product
+    getTotalValue() {
+        return this.price * this.quantity;
+    }
 }
