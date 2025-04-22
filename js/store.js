@@ -6,5 +6,8 @@ export class Store {
         this.inventory = [];
     }
 
-    
+    // Step 14: [Part 4 - Store Class] Method to add a product to inventory
+    addProduct(product) {
+        this.inventory.push(product);
+    }
 }
